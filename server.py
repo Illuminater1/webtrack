@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/", methods=['POST', 'GET'])
 def index():
     weather = weather_by_city("Moscow,Russia")
-    if weather:
+    if weather:git config user.name
         return f"Температура в {weather['observation_time']}: {weather['temp_C']} -  ощущается как {weather['FeelsLikeC']}"
     else:
         return "Сервис погоды временно недоступен"
