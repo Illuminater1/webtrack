@@ -3,7 +3,8 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-from webtrack.webapp.model import db, News
+from webtrack.webapp.db import db
+from webtrack.webapp.news.models import News
 
 
 def get_html(url):
