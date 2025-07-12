@@ -1,6 +1,6 @@
 webenv/
 __pycache__/
 config.py
-run.txt
+run.ps1
 webapp.db
 python_org.html
