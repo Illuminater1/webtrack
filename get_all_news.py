@@ -3,5 +3,5 @@ from webtrack.webapp.news.parsers.habr import get_news_snippets, get_news_conten
 
 app = create_app()
 with app.app_context():
-    # get_news_snippets()
+    get_news_snippets()
     get_news_content()
