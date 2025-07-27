@@ -9,8 +9,6 @@ blueprint = Blueprint('user', __name__, url_prefix='/user')
 
 
 @blueprint.route("/login")
-
-
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('news.index'))
@@ -40,6 +38,7 @@ def logout():
     flash('Вы успешно разлогинились')
     return redirect(url_for('news.index'))
 
+
 @blueprint.route('/register')
 def register():
     if current_user.is_authenticated:
@@ -47,6 +46,7 @@ def register():
     title = "Регистрация"
     login_form = RegistrationForm()
     return render_template('user/registration.html', page_title=title, form=login_form)
+
 
 @blueprint.route('/process-reg', methods=['POST'])
 def process_reg():

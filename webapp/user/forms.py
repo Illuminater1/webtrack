@@ -14,7 +14,8 @@ class LoginForm(FlaskForm):
 
 class RegistrationForm(FlaskForm):
     username = StringField('Имя пользователя', validators=[DataRequired()], render_kw={"class": "form-control"})
-    email = StringField('Электронная почта', validators=[DataRequired(), Email()], render_kw={"class": "form-control"})
+    email = StringField('Электронная почта', validators=[DataRequired(), Email()],
+                        render_kw={"class": "form-control"})
     password = PasswordField('Пароль', validators=[DataRequired()], render_kw={"class": "form-control"})
     password2 = PasswordField('Повторите пароль', validators=[DataRequired(), EqualTo("password")],
                               render_kw={"class": "form-control"})
