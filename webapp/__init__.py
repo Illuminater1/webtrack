@@ -2,14 +2,14 @@ from flask import Flask
 from flask_login import LoginManager
 from flask_migrate import Migrate
 
-from webtrack.webapp.db import db
-from webtrack.webapp.user.models import User
-from webtrack.webapp.weather import weather_by_city
-from webtrack.webapp.config import Config
+from .db import db
+from .user.models import User
+from .weather import weather_by_city
+from .config import Config
 
-from webtrack.webapp.user.views import blueprint as user_blueprint
-from webtrack.webapp.admin.views import blueprint as admin_blueprint
-from webtrack.webapp.news.views import blueprint as news_blueprint
+from .user.views import blueprint as user_blueprint
+from .admin.views import blueprint as admin_blueprint
+from .news.views import blueprint as news_blueprint
 
 
 def create_app():

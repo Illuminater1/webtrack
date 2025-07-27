@@ -2,8 +2,8 @@ from getpass import getpass
 import sys
 
 from webapp import create_app
-from webtrack.webapp.db import db
-from webtrack.webapp.user.models import User
+from webapp.db import db
+from webapp.user.models import User
 
 app = create_app()
 

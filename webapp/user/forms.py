@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import BooleanField, StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Email, EqualTo, ValidationError
 
-from webtrack.webapp.user.models import User
+from .models import User
 
 
 class LoginForm(FlaskForm):

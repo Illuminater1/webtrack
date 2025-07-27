@@ -1,7 +1,7 @@
 import requests
 
-from webtrack.webapp.db import db
-from webtrack.webapp.news.models import News
+from ..db import db
+from ..news.models import News
 
 def get_html(url):
     headers = {

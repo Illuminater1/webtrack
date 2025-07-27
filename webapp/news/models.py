@@ -1,4 +1,4 @@
-from webtrack.webapp.db import db
+from ..db import db
 
 class News(db.Model):
     id = db.Column(db.Integer, primary_key=True)

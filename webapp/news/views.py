@@ -1,6 +1,6 @@
-from webtrack.webapp.news.models import News
+from .models import News
 from flask import abort, Blueprint, render_template, current_app
-from webtrack.webapp.weather import weather_by_city
+from ..weather import weather_by_city
 
 blueprint = Blueprint('news', __name__)
 

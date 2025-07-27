@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import locale
 import platform
 
-from webtrack.webapp.news.parsers.utils import get_html, save_news
-from webtrack.webapp.db import db
-from webtrack.webapp.news.models import News
+from webapp.news.parsers.utils import get_html, save_news
+from webapp.db import db
+from webapp.news.models import News
 
 if platform.system() == 'Windows':
     locale.setlocale(locale.LC_ALL, "russian")
